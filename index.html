@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Personal - Treino dos Deuses</title>
+    <meta name="description" content="Personal trainer Matheus - Transforme seu corpo com treinos personalizados inspirados na força dos deuses gregos">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#inicio" class="logo" data-scroll>MATHEUS</a>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-menu" id="navMenu">
+                    <a href="#inicio" data-scroll>Início</a>
+                    <a href="#sobre" data-scroll>Sobre</a>
+                    <a href="#beneficios" data-scroll>Benefícios</a>
+                    <a href="#depoimentos" data-scroll>Depoimentos</a>
+                    <a href="#consultorias" data-scroll>Consultorias</a>
+                    <a href="#contato" data-scroll>Contato</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden" id="mobileMenu">
+                <a href="#inicio" data-scroll>Início</a>
+                <a href="#sobre" data-scroll>Sobre</a>
+                <a href="#beneficios" data-scroll>Benefícios</a>
+                <a href="#depoimentos" data-scroll>Depoimentos</a>
+                <a href="#consultorias" data-scroll>Consultorias</a>
+                <a href="#contato" data-scroll>Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content animate-slide-right">
+                    <h1 class="hero-title">
+                        Treine Como Um
+                        <span class="text-gradient">DEUS GREGO</span>
+                    </h1>
+                    <p class="hero-description">
+                        Transforme seu corpo com treinos personalizados e alcance a força e estética dos deuses do Olimpo. 
+                        Com Matheus Personal, você conquista resultados extraordinários.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-scroll-to="consultorias">Comece Agora</button>
+                        <button class="btn btn-outline" data-scroll-to="sobre">Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="hero-image animate-slide-left">
+                    <img src="assets/greek-god-hero.png" alt="Deus Grego Musculoso">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image scroll-animate">
+                    <div class="image-glow"></div>
+                    <img src="assets/matheus-photo.jpg" alt="Matheus Personal Trainer">
+                </div>
+                <div class="about-content scroll-animate">
+                    <h2 class="section-title text-gradient">Sobre Matheus</h2>
+                    <div class="title-underline"></div>
+                    
+                    <p class="about-text">
+                        Com anos de experiência e paixão por transformação física, Matheus é especializado em criar 
+                        treinos personalizados que se adaptam ao seu biotipo, objetivos e rotina.
+                    </p>
+                    
+                    <p class="about-text">
+                        Sua metodologia exclusiva combina exercícios de força, hipertrofia e condicionamento físico, 
+                        sempre respeitando os limites do corpo e promovendo evolução constante. Cada treino é 
+                        cuidadosamente planejado para maximizar seus resultados.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <p>Treinos 100% personalizados</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <p>Acompanhamento dedicado e atencioso</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <p>Resultados comprovados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="benefits-section">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title text-gradient">Seus Benefícios</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    Descubra as vantagens de ter um personal trainer dedicado ao seu sucesso
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card scroll-animate">
+                    <div class="benefit-icon">
+                        <i data-lucide="dumbbell"></i>
+                    </div>
+                    <h3 class="benefit-title">Treinos Personalizados</h3>
+                    <p class="benefit-description">
+                        Cada exercício é planejado especificamente para você, considerando seu nível atual, objetivos e limitações físicas.
+                    </p>
+                </div>
+
+                <div class="benefit-card scroll-animate">
+                    <div class="benefit-icon">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <h3 class="benefit-title">Resultados Garantidos</h3>
+                    <p class="benefit-description">
+                        Metodologia comprovada que gera resultados reais. Acompanhamento constante para garantir sua evolução.
+                    </p>
+                </div>
+
+                <div class="benefit-card scroll-animate">
+                    <div class="benefit-icon">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3 class="benefit-title">Saúde em Primeiro Lugar</h3>
+                    <p class="benefit-description">
+                        Foco em treinos seguros e eficientes que respeitam seu corpo, prevenindo lesões e promovendo bem-estar.
+                    </p>
+                </div>
+
+                <div class="benefit-card scroll-animate">
+                    <div class="benefit-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="benefit-title">Evolução Constante</h3>
+                    <p class="benefit-description">
+                        Progressão inteligente dos treinos, sempre desafiando você a superar seus limites de forma saudável.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="testimonials-section">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title text-gradient">Depoimentos</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    Veja o que nossos alunos dizem sobre suas transformações
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card scroll-animate">
+                    <div class="testimonial-content">
+                        <img src="/assets/testimonial-1.jpg" alt="Carla Silva" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Em 6 meses perdi 15kg e ganhei muito mais disposição. Os treinos do Matheus são desafiadores mas adaptados ao meu ritmo. Hoje me sinto muito mais confiante!"
+                            </p>
+                            <p class="testimonial-author">— Carla Silva</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card scroll-animate">
+                    <div class="testimonial-content">
+                        <img src="/assets/testimonial-2.jpg" alt="Rafael Costa" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Ganhei 8kg de massa muscular em 4 meses. O acompanhamento é impecável, cada detalhe do treino faz diferença. Recomendo demais!"
+                            </p>
+                            <p class="testimonial-author">— Rafael Costa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card scroll-animate">
+                    <div class="testimonial-content">
+                        <img src="/assets/testimonial-3.jpg" alt="Juliana Mendes" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Nunca imaginei que conseguiria ter o corpo que sempre sonhei. Com dedicação e os treinos personalizados do Matheus, alcancei meus objetivos!"
+                            </p>
+                            <p class="testimonial-author">— Juliana Mendes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card scroll-animate">
+                    <div class="testimonial-content">
+                        <img src="/assets/testimonial-4.jpg" alt="Pedro Oliveira" class="testimonial-photo">
+                        <div class="testimonial-text">
+                            <div class="stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                            <p class="testimonial-quote">
+                                "A transformação foi além do físico. Melhorei minha saúde, autoestima e qualidade de vida. Treinar com o Matheus mudou minha rotina completamente!"
+                            </p>
+                            <p class="testimonial-author">— Pedro Oliveira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consulting Section -->
+    <section id="consultorias" class="consulting-section">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title text-gradient">Consultorias</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    Escolha o formato que melhor se adapta à sua rotina e objetivos
+                </p>
+            </div>
+
+            <div class="consulting-grid">
+                <div class="consulting-card scroll-animate">
+                    <h3 class="consulting-title">Consultoria Presencial</h3>
+                    <div class="consulting-features">
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Treinos presenciais em academia equipada</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Acompanhamento individual durante os exercícios</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Correção de postura em tempo real</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Flexibilidade de horários</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Motivação e suporte constante</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Equipamentos profissionais disponíveis</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="openWhatsApp('Olá! Gostaria de saber mais sobre a Consultoria Presencial.')">
+                        Quero Participar
+                    </button>
+                </div>
+
+                <div class="consulting-card scroll-animate">
+                    <h3 class="consulting-title">Consultoria Online</h3>
+                    <div class="consulting-features">
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Treinos personalizados enviados semanalmente</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Vídeos explicativos de cada exercício</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Acompanhamento via WhatsApp</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Ajustes conforme sua evolução</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Treine onde e quando quiser</p>
+                        </div>
+                        <div class="feature">
+                            <i data-lucide="check" class="check-icon"></i>
+                            <p>Plano de treino detalhado em PDF</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="openWhatsApp('Olá! Gostaria de saber mais sobre a Consultoria Online.')">
+                        Quero Participar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title text-gradient">Fale Comigo</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    Entre em contato e comece sua jornada de transformação hoje mesmo
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="https://instagram.com/matheuspersonal" target="_blank" class="contact-card scroll-animate">
+                    <div class="contact-icon instagram">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                    <h3 class="contact-title">Instagram</h3>
+                    <p class="contact-description">@matheuspersonal</p>
+                </a>
+
+                <a href="https://wa.me/5511999999999" target="_blank" class="contact-card scroll-animate">
+                    <div class="contact-icon whatsapp">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+                    <h3 class="contact-title">WhatsApp</h3>
+                    <p class="contact-description">+55 11 99999-9999</p>
+                </a>
+
+                <a href="mailto:matheus@personal.com" class="contact-card scroll-animate">
+                    <div class="contact-icon email">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <h3 class="contact-title">E-mail</h3>
+                    <p class="contact-description">matheus@personal.com</p>
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p class="footer-text">© 2025 Matheus Personal. Todos os direitos reservados.</p>
+                <p class="footer-motto">TRANSFORME SEU CORPO, ELEVE SUA MENTE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

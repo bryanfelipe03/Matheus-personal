@@ -111,7 +111,7 @@ function initScrollAnimations() {
 
 // WhatsApp integration
 function openWhatsApp(message) {
-    const phoneNumber = '5511999999999'; // Altere para o número correto
+    const phoneNumber = '5511982508553'; // Altere para o número correto
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(url, '_blank');

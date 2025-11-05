@@ -335,6 +335,7 @@ img {
 .hero-image {
     display: none;
     justify-content: center;
+    border: 6px solid #000;
 }
 
 .hero-image img {

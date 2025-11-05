@@ -439,22 +439,23 @@ img {
     flex-shrink: 0;
 }
 
-@media (min-width: 768px) {
-    .about-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .about-image {
-        order: 0;
-    }
-    
-    .section-title {
-        font-size: 3rem;
-    }
-    
-    .about-text {
-        font-size: 1.25rem;
-    }
+/* CORREÇÃO MOBILE - ABOUT SECTION */
+@media (max-width: 767px) {
+  .about-grid {
+    grid-template-columns: 1fr !important; /* força 1 coluna */
+    gap: 2rem;
+  }
+  .about-image { 
+    order: 1; /* imagem primeiro */
+    text-align: center;
+  }
+  .about-content { 
+    order: 2; /* texto depois */
+  }
+  .about-image img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
 /* Benefits Section */
